@@ -1,12 +1,17 @@
 {
   "development": {
     "username": "root",
-    "password": "",
+    "password": null,
     "database": "foodie_db",
-    "host": "localhost",
-    "port": 3306,
-    "dialect": "mysql",
-    "logging": false
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "foodie_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   },
   "production": {
     "use_env_variable": "DATABASE_URL",
@@ -16,7 +21,6 @@
         "require": true,
         "rejectUnauthorized": false
       }
-    },
-    "logging": false
+    }
   }
 }
