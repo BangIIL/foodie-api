@@ -1,0 +1,22 @@
+{
+  "development": {
+    "username": "root",
+    "password": "",
+    "database": "foodie_db",
+    "host": "localhost",
+    "port": 3306,
+    "dialect": "mysql",
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "mysql",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    },
+    "logging": false
+  }
+}
